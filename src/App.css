@@ -1,38 +1,114 @@
+
 .App {
-  text-align: center;
+  background-color: #282c34;
+  min-height: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#active {
+  border-color: blue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+video {
+  width: 500px;
+  height: 240px
+}
+
+.max-width-container {
+  width: 800px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card-buttons {
+  border: solid;
+  border-color: black;
+  margin: 10px;
+}
+
+.vid-desc {
+  width: 500px;
+  border: solid;
+  border-color: beige;
+  margin: 30px 0px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.buttons-holder {
+  overflow: auto;
+  border: solid;
+  border-color: beige ;
+  padding: 10px 15px;
+  height: 350px;
+  position: relative;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0px 10px 0px;
+}
+
+button {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 35px 10px;
+  cursor: pointer;
+}
+
+.maindiv {
+  background-color: white;
+  font-weight: bolder;
+  padding: 50px 30px;
+}
+
+.maindiv h2 {
+  color: rebeccapurple;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  border: 15px 0px;
+  border-style: solid none;
+  border-color: rebeccapurple;
 }
 
-.App-link {
-  color: #61dafb;
+.arrow {
+  background-color: slategray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  border: solid;
+  border-color: #282c34;
+  color: #282c34;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 767px) {
+  .app {
+    box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+  .max-width-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #video {
+    width: 100%;
+  }
+  .main-content {
+    display: block;
+  }
+  .news-list {
+    margin-bottom: 20px;
+  }
+  .vid-desc {
+    width: 100%;
   }
 }
